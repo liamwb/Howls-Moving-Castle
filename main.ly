@@ -97,6 +97,18 @@ symbols = {
   <d c'> a b
   <d a>4.\arpeggio g8 a4
   <g, b> d g
+  g, d b 
+  \tuplet 3/2 { <b, b>8( cis' b)} ais4 b 
+  <b, d'> cis' b
+  <fis, ais> fis cis'
+  <fis, fis> cis fis
+  <b, d'> d d'
+  <b, d'> cis' b
+  <fis, cis'> fis ais
+  fis' cis' ais
+  <b, fis b\3 dis'>\arpeggio <b, \parenthesize fis>4 <dis' b\3>
+  dis' e' fis'
+  <e, g'> b8\3 a g fis
 }
 
 << \new Staff { \clef "G_8" \symbols }
