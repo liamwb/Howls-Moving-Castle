@@ -22,6 +22,8 @@
 }
 
 symbols = {
+  % Space the notes slightly further apart to suit my aesthetic preference (default is 2.0)
+  \override Score.SpacingSpanner.shortest-duration-space = 2.5
   \key e \minor
   \time 3/4
   \tempo 4 = 120
@@ -29,8 +31,8 @@ symbols = {
   <a fis> <b> <a fis> <b> <a fis> <b>
   <g e> <a fis> <g e> <a fis> <g e> <a fis>
   <fis dis a,>4 <dis b, fis,>2
-  b4 \arpeggioArrowDown <dis b, fis,>2\arpeggio(
-  <dis b, fis,>2.)
+  b4 \arpeggioArrowDown <dis~ b,~ fis,~>2\arpeggio \break  % TODO fix brackets
+  <dis b, fis,>2.
   \tempo 4 = 90 b,4 e g
   <b a,> <g e>2
   \arpeggioArrowUp <a dis b,>4\arpeggio g fis
@@ -88,8 +90,8 @@ symbols = {
   <g, b>4 d8 a g4
   <fis, fis> gis ais
   b b, fis
-  dis b, fis,(
-  fis,) b, cis
+  dis b, fis,~  % TODO fix brackets
+  fis, b, cis
   dis b, <fis, b>
   <c' d> a b
   <d a> g fis
@@ -108,7 +110,7 @@ symbols = {
   <fis, cis'> fis ais
   fis' cis' ais
   \tempo 4 = 160
-  <b, fis b\3 dis'>\arpeggio <b, \parenthesize fis>4 <dis' b\3>
+  <b, fis~ b\3 dis'>\arpeggio <b, \parenthesize fis>4 <dis' b\3>  % TODO fix brackets
   dis' e' fis'
   <e, g'> b8\3 a g fis
   g\4 fis e d e d
@@ -130,7 +132,10 @@ symbols = {
   b, e g
 }
 
-<< \new Staff { \clef "G_8" \symbols }
+<< \new Staff { 
+  \override TupletBracket.bracket-visibility = ##t
+  \clef "G_8" 
+  \symbols }
   \new TabStaff  << 
     \new TabVoice { 
       \set TabStaff.capoFret = #3 % Set capo on 3rd fret
