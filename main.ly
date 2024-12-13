@@ -39,6 +39,7 @@ symbols = {
   <a, e'>4 <e g> <e'>
   <e a c' e'>\arpeggio fis' d'8 c'
   <g, d'>4  <fis  b>2\3
+  g,4 <fis b\3>8 fis b\3 d'
   <fis' cis>4 <g b> <e'>
   <fis, d'> cis' d' 
   <b, e'> d d'
@@ -46,10 +47,10 @@ symbols = {
   <g, d a>\arpeggio g a
   <fis, b> a e
   <b, fis>2.
-  fis'\grace8( g'2.)
+  \grace fis'8( g'2.)
   fis'2.
-  a'\grace8( g'2.)
-  g'\grace8( fis') e' dis' c' b b,(
+  \grace a'8( g'2.)
+  \grace g'8( fis') e' dis' c' b b,(
   b,2.)
   \tempo 4 = 145
   e,4 <e g> <e g>
@@ -106,9 +107,27 @@ symbols = {
   <b, d'> cis' b
   <fis, cis'> fis ais
   fis' cis' ais
+  \tempo 4 = 160
   <b, fis b\3 dis'>\arpeggio <b, \parenthesize fis>4 <dis' b\3>
   dis' e' fis'
   <e, g'> b8\3 a g fis
+  g\4 fis e d e d
+  <cis e a cis'>4\arpeggio e <a cis'>
+  <a, cis'> d' e'
+  <d fis'> a8 g fis e
+  d4 e' d'
+  <gis, cis'> c' cis'
+  <c e e'>\arpeggio d' cis'
+  <fis, b> ais b
+  <fis, cis'> fis fis'
+  <a, a'> c'\3 g'
+  <a, fis'> c'\3 e'
+  <b, dis'>8 r \tuplet 3/2 {a b\3 a} g4
+  b,8 r \tuplet 3/2 {g a g} fis4
+  b,8 r \tuplet 3/2 {g a g} fis4
+  b,8 r \tuplet 3/2 {e fis e} dis4
+  \tempo 4 = 145
+  b, e g
 }
 
 << \new Staff { \clef "G_8" \symbols }
