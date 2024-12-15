@@ -130,6 +130,32 @@ symbols = {
   b,8 r \tuplet 3/2 {e fis e} dis4
   \tempo 4 = 145
   b, e g
+  <a, b> <e g> b
+  <b, dis a>\arpeggio g fis
+  <e, g> b, e
+  <e, e> g b
+  <a, e'> <e g> e'
+  <e a c' e'>\arpeggio fis' d'8 c'
+  <g, g'>4 d g
+  fis g d'
+  <cis fis'> <g b> e'
+  <fis, d'> cis' d'
+  <b, e'> d d'
+  <a cis'> e b
+  <g, d a>\arpeggio g a
+  <fis, b> a e
+  <b, fis> b\3 b
+  b, e g
+  <a, b> <e g> b
+  <b, dis a>\arpeggio g fis
+  <e, g> b, e
+  <f, e> g8 e, <g, b>4
+  <c e'> <e g> e'
+  <e a c' e'>\arpeggio fis' d'8 c'
+  <g, d'>4 d g
+  fis b\3 d'
+  <cis fis'> <g b> e'
+  fis, d'8 cis' c' cis'
 }
 
 << \new Staff { 
