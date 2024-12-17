@@ -24,11 +24,11 @@
 
 symbols = {
   % Space the notes slightly further apart to suit my aesthetic preference (default is 2.0)
-  \override Score.SpacingSpanner.shortest-duration-space = 2.5
+  \override Score.SpacingSpanner.shortest-duration-space = 2.75
   \key e \minor
   \time 3/4
   \tempo 4 = 120
-  <g b>8 <a c'> <g b> <a c'> <g b> <a c'>
+  <g b>8-\markup {\lower #3 {\italic"Let Ring"}} <a c'> <g b> <a c'> <g b> <a c'>
   <a fis> <b> <a fis> <b> <a fis> <b>
   <g e> <a fis> <g e> <a fis> <g e> <a fis>
   <fis dis a,>4 <dis b, fis,>2
@@ -127,7 +127,6 @@ symbols = {
   <a, fis'> c'\3 e'
   <b, dis'>8 r \tuplet 3/2 {a b\3 a} g4
   b,8 r \tuplet 3/2 {g a g} fis4
-  b,8 r \tuplet 3/2 {g a g} fis4
   b,8 r \tuplet 3/2 {e fis e} dis4
   \tempo 4 = 145
   b, e g
@@ -137,7 +136,7 @@ symbols = {
   <e, e> g b
   <a, e'> <e g> e'
   <e a c' e'>\arpeggio fis' d'8 c'
-  <g, g'>4 d g
+  <g, d'>4 d g
   fis g d'
   <cis fis'> <g b> e'
   <fis, d'> cis' d'
@@ -157,7 +156,7 @@ symbols = {
   fis b\3 d'
   <cis fis'> <g b> e'
   fis, d'8 cis' c' cis'
-  <b, b>4 d d'
+  <b, e'>4 d d'
   a, cis'8 b ais b
   <g, b>4 d8 a g4
   <fis, fis>4. gis8 ais4
