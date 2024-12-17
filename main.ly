@@ -1,4 +1,5 @@
 \version "2.24.4"
+\pointAndClickOff  
 
 
 
@@ -156,6 +157,22 @@ symbols = {
   fis b\3 d'
   <cis fis'> <g b> e'
   fis, d'8 cis' c' cis'
+  <b, b>4 d d'
+  a, cis'8 b ais b
+  <g, b>4 d8 a g4
+  <fis, fis>4. gis8 ais4
+  <b, b> b8\3 b b\3 b
+  b,4 b8\3 b b\3 b
+  \tempo 4 = 80
+  b,4 b8\3 b b\3 b
+  b, b cis' b <d ais>4
+  <b, e g b>4.\arpeggio a8 g4
+  <fis, fis>4. gis8( ais4~)
+  ais2. \bar ".|:"
+  \tempo 4 = 190
+  \repeat volta 5  { <b, fis b\3 b>4 b8\3 b b\3 b-"repeat x5"}
+  <b,~ fis~ b\3~ b~>2.\arpeggio
+  <b, fis b\3 b>2.
 }
 
 << \new Staff { 
