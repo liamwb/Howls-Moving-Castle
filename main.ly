@@ -90,7 +90,7 @@ symbols = {
   a, cis'8 b d b
   <g, b>4 d8 a g4
   <fis, fis> gis ais
-  b b, fis
+  b b, cis
   dis b, fis,~  % TODO fix brackets
   fis, b, cis
   dis b, <fis, b>
